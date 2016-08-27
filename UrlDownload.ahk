@@ -1,5 +1,5 @@
 ;================================================================================;
-;	urlDownload - An AutoHotkey library for downloading files                    ;
+;	UrlDownload - An AutoHotkey library for downloading files                    ;
 ;	Copyright (C) 2016  Brian Baker https://github.com/Fooly-Cooly               ;
 ;	Licensed with GPL v3 https://www.gnu.org/licenses/gpl-3.0.txt                ;
 ;	Works with AHK ANSI, Unicode & 64-bit                                        ;
