@@ -31,11 +31,8 @@ urlDownload_Call(ptrThis, intProgCur = 0, intProgMax = 0, intStatCode = 0, ptrSt
 	If A_EventInfo = 6
 	{
 		GuiControl,, guiDownloadProg, % intProg := 100 * intProgCur//intProgMax
-		GuiControl,, guiDownloadText, % intProgCur . "/" . intProgMax
-		If intProg = 100
-			GuiControl,, guiDownloadText, % intProgCur . "/" . intProgMax . " Downloaded in " . ((A_TickCount - dtmCompl)/1000) . " seconds"
+		GuiControl,, guiDownloadText, % intProgCur "/" intProgMax .= intProg == 100 ? " Downloaded in " ((A_TickCount - dtmCompl) / 1000) " seconds" : ""
 	}
-	return 0
 }
 
 urlDownload_File(strUrl, strDest = ".", blnOver = True)
